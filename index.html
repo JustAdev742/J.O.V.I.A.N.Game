@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jovian Games | Powering the New Era of Play</title>
+  <meta name="description" content="Jovian Games — high-performance engineering, proprietary engine development, immersive titles, decentralized tooling. Built by CodeNova Studios." />
+  <meta name="theme-color" content="#05070a" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lightweight inline SVG favicon -->
+  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect rx="18" width="100" height="100" fill="%23050B13"/><text x="50" y="58" font-size="48" text-anchor="middle" fill="%23ffffff" font-family="Orbitron,monospace">J</text></svg>'>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-row container">
+      <div class="brand">
+        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" class="icon-btn" aria-pressed="false">🌗</button>
+        <div class="logo-text">
+          <span class="logo-title">Jovian Games</span>
+          <span class="logo-sub">CodeNova Studios</span>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation" class="primary-nav">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">Legal & Privacy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="hero container" role="img" aria-label="Futuristic glow and Jovian Games title">
+      <div class="hero-content">
+        <h1 class="hero-title">POWERING THE NEW ERA OF PLAY</h1>
+        <p class="hero-lead">High-performance engineering, decentralized tooling, and immersive worlds — built with uncompromising technical craft.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Procedural nebulous SVG background for performance and crispness -->
+        <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" class="nebula">
+          <defs>
+            <radialGradient id="g1" cx="20%" cy="20%" r="60%">
+              <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="g2" cx="80%" cy="80%" r="60%">
+              <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="blur">
+              <feGaussianBlur stdDeviation="40" />
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#g1)" filter="url(#blur)"/>
+          <rect width="100%" height="100%" fill="url(#g2)" filter="url(#blur)"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="projects" class="container section">
+      <h2 class="section-title">Active Projects</h2>
+      <p class="section-sub">From engine development to immersive narrative experiments — a snapshot of current initiatives.</p>
+
+      <div class="grid" role="list">
+        <article class="card" role="listitem" data-project="engine" tabindex="0" aria-labelledby="p1-title">
+          <div class="card-inner">
+            <span class="tag">ENGINE</span>
+            <h3 id="p1-title">JOVIAN Engine</h3>
+            <p class="card-excerpt">A proprietary C++ engine for massive-scale environments, multi-threaded simulation, and a custom shader pipeline optimized for next-gen consoles and PC.</p>
+            <div class="card-actions">
+              <button class="btn small" data-open="engine">Details</button>
+              <a class="btn link" href="#" aria-label="Open Jovian Engine whitepaper">Whitepaper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" data-project="hour" tabindex="0" aria-labelledby="p2-title">
+          <div class="card-inner">
+            <span class="tag alt">UPCOMING</span>
+            <h3 id="p2-title">Project: Hour of Joy</h3>
+            <p class="card-excerpt">A high-fidelity survival-horror experience on Unreal Engine 5 — experimental NPC architectures, dynamic lighting, and adaptive audio systems.</p>
+            <div class="card-actions">
+              <button class="btn small" data-open="hour">Details</button>
+              <a class="btn link" href="#" aria-label="Watch Hour of Joy teaser">Teaser</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" data-project="launcher" tabindex="0" aria-labelledby="p3-title">
+          <div class="card-inner">
+            <span class="tag">TOOLS</span>
+            <h3 id="p3-title">CodeNova Launcher</h3>
+            <p class="card-excerpt">A decentralized desktop application for seamless game updates and peer-to-peer community tools, built with privacy-first principles.</p>
+            <div class="card-actions">
+              <button class="btn small" data-open="launcher">Details</button>
+              <a class="btn link" href="#" aria-label="Download launcher beta">Beta</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2 class="section-title">Legal & Privacy</h2>
+      <div class="privacy-box" aria-labelledby="privacy-heading">
+        <h3 id="privacy-heading">Privacy & Decentralization</h3>
+        <p>CodeNova Studios and Jovian Games are committed to user privacy. Our decentralized tools do not collect, store, or sell personal data. We utilize Epic Online Services (EOS) solely for secure identity authentication and matchmaking services. No user data is ever stored on central studio servers.</p>
+        <p class="muted">Support Inquiries: <a class="contact-link" href="mailto:support@joviangame.me">support@joviangame.me</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">For partnerships, press, or support, reach out — or use the quick contact form below.</p>
+
+      <form id="contact-form" class="contact-grid" novalidate>
+        <label for="name" class="sr-only">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email" class="sr-only">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <button type="button" id="mailto-fallback" class="btn ghost">Open Mail App</button>
+        </div>
+
+        <p id="form-status" role="status" aria-live="polite" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close details">&times;</button>
+      <header>
+        <h3 id="modal-title"></h3>
+        <p id="modal-tagline" class="muted"></p>
+      </header>
+      <div id="modal-body" class="modal-body"></div>
+      <footer class="modal-footer">
+        <a id="modal-cta" class="btn primary" href="#" target="_blank" rel="noopener">Learn More</a>
+        <button class="btn ghost modal-close">Close</button>
+      </footer>
+    </div>
+    <div class="modal-backdrop" data-dismiss="true"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 CodeNova Studios. Engineered in Australia.</p>
+      <p class="muted">Built with privacy-first design. No central storage of user data.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
