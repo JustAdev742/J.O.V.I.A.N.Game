@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - JOVIAN Engine & CodeNova Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #020408;
+            --cyan: #00f7ff;
+            --cyan-dim: rgba(0, 247, 255, 0.2);
+            --text-main: #8b9bb4;
+            --text-light: #ffffff;
+            --glass-bg: rgba(10, 14, 23, 0.7);
+            --glass-border: rgba(0, 247, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-deep);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--cyan-dim);
+            border: 1px solid var(--cyan);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--cyan);
+        }
+
+        #jovian-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .nav-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            background: rgba(2, 4, 8, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--cyan);
+        }
+
+        .btn-return {
+            background: transparent;
+            color: var(--cyan);
+            border: 1px solid var(--cyan);
+            padding: 10px 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .btn-return:hover {
+            background: var(--cyan-dim);
+            box-shadow: 0 0 15px var(--cyan-dim);
+        }
+
+        .privacy-container {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 120px auto 60px;
+            padding: 50px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .page-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--cyan-dim);
+            padding-bottom: 20px;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--cyan);
+            margin-bottom: 40px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            margin: 40px 0 20px;
+        }
+
+        h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin: 25px 0 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: var(--text-light);
+        }
+
+        a {
+            color: var(--cyan);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-shadow: 0 0 8px var(--cyan-dim);
+        }
+
+        @media (max-width: 768px) {
+            .nav-header { padding: 20px; }
+            .privacy-container {
+                margin: 100px 20px 40px;
+                padding: 30px;
+            }
+            .page-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="jovian-grid"></canvas>
+
+    <nav class="nav-header">
+        <a href="https://joviangame.me/J.O.V.I.A.N.Game/#" class="logo">CODE<span>NOVA</span></a>
+        <a href="https://joviangame.me/J.O.V.I.A.N.Game/#" class="btn-return">Return to Hub</a>
+    </nav>
+
+    <main class="privacy-container">
+        <h1 class="page-title">Global Privacy Policy</h1>
+        <div class="last-updated">LAST UPDATED: MARCH 2026 | STATUS: ENFORCED</div>
+
+        <p>This Privacy Policy outlines how <strong>CodeNova Studios</strong> ("we", "our", or "us") collects, utilizes, protects, and handles your data when you interact with the <strong>JOVIAN Engine</strong>, the CodeNova Launcher, and our associated digital infrastructure (collectively, the "Services").</p>
+        
+        <p>As a high-performance software engineering firm, CodeNova Studios is committed to absolute data minimization, cryptographic security, and transparent operational protocols. We have engineered our architecture to require as little personal data as possible, delegating sensitive identity operations to trusted, industry-standard third-party providers.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>Our systems are designed to operate efficiently without requiring extensive personal profiles. The data we collect is strictly limited to operational necessities:</p>
+        
+        <h3>A. Account and Authentication Data</h3>
+        <p>We do not create, host, or store proprietary user accounts or raw passwords. We utilize <strong>Epic Online Services (EOS)</strong> for secure identity verification. When you authenticate via EOS, we receive:</p>
+        <ul>
+            <li>A unique, anonymized Epic Account ID (for matchmaking and save-state verification).</li>
+            <li>Your public display name.</li>
+            <li>Basic entitlement data (to verify your license to use the JOVIAN Engine or associated software).</li>
+        </ul>
+
+        <h3>B. Network and Telemetry Data</h3>
+        <p>To ensure 99.97% SLA uptime and sub-millisecond latency, our systems monitor network health. We collect:</p>
+        <ul>
+            <li><strong>Hardware Specifications:</strong> CPU/GPU models, RAM, and OS version to optimize Vulkan/DirectX 12 shader compilation.</li>
+            <li><strong>Diagnostic Trace Logs:</strong> Only submitted when a user explicitly utilizes the CodeNova Launcher's internal feedback tool following a software crash.</li>
+            <li><strong>Transient Network Data:</strong> See Section 3 for our decentralized networking protocols.</li>
+        </ul>
+
+        <h2>2. Epic Online Services (EOS) Integration</h2>
+        <p>CodeNova Studios strictly adheres to the Epic Games Developer Agreement. Our integration with Epic Online Services is limited to secure identity authentication, cross-platform matchmaking, and anti-cheat implementation.</p>
+        <p><strong>Under no circumstances does CodeNova Studios intercept, scrape, or store your Epic Games account credentials.</strong> All authentication flows are handled directly via Epic Games' secure API endpoints. For information on how Epic Games handles your global account data, please refer to the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank">Epic Games Privacy Policy</a>.</p>
+
+        <h2>3. Decentralized P2P Networking & IP Addresses</h2>
+        <p>The JOVIAN Engine utilizes a proprietary, decentralized peer-to-peer (P2P) networking architecture to support massive-scale environments.</p>
+        <ul>
+            <li><strong>Transient Connectivity:</strong> During active matchmaking or gameplay, your IP address is temporarily shared with other clients (nodes) in your immediate instance to facilitate the P2P handshake.</li>
+            <li><strong>Zero-Retention Policy:</strong> CodeNova Studios <strong>does not</strong> log, archive, or permanently store your IP address on our central servers. Once a session terminates, the routing data is purged from memory.</li>
+        </ul>
+
+        <h2>4. How We Use Your Information</h2>
+        <p>The highly restricted data we process is used exclusively for the following technical operations:</p>
+        <ul>
+            <li>Facilitating secure login protocols via EOS.</li>
+            <li>Routing matchmaking requests to the lowest-latency nodes.</li>
+            <li>Deploying critical engine patches and security updates via the CodeNova Launcher.</li>
+            <li>Analyzing aggregate, anonymized crash reports to finalize the C++ core architecture.</li>
+            <li>Enforcing Anti-Cheat and maintaining the integrity of the 5-million-player ecosystem.</li>
+        </ul>
+
+        <h2>5. Data Security & Storage</h2>
+        <p>We employ military-grade security protocols. All data in transit is encrypted using TLS 1.3. Because we do not store centralized user databases or passwords, the vector for catastrophic data breaches is fundamentally neutralized by our architecture. Any localized telemetry data is stored on heavily restricted, SOC 2-compliant cloud infrastructure.</p>
+
+        <h2>6. Third-Party Sharing</h2>
+        <p>We do not sell, rent, or monetize your data. We only share operational data with:</p>
+        <ul>
+            <li><strong>Epic Games:</strong> Exclusively for the purpose of validating EOS tokens and managing cross-play ecosystems.</li>
+            <li><strong>Legal Authorities:</strong> Only when legally compelled by a valid subpoena or court order in our operating jurisdiction (New South Wales, Australia).</li>
+        </ul>
+
+        <h2>7. Your Rights and Control</h2>
+        <p>Depending on your global jurisdiction (including GDPR and CCPA regulations), you maintain absolute rights over your data ecosystem:</p>
+        <ul>
+            <li><strong>The Right to Access:</strong> You may request a payload of the data associated with your Epic ID in our systems.</li>
+            <li><strong>The Right to Erasure:</strong> You may request the deletion of your historical diagnostic data. (Note: Authenticating via EOS again will generate a new connection log).</li>
+            <li><strong>Telemetry Opt-Out:</strong> Users may disable non-critical hardware telemetry directly within the CodeNova Launcher settings.</li>
+        </ul>
+
+        <h2>8. Contact the Engineering Division</h2>
+        <p>For data privacy requests, EOS compliance inquiries, or legal concerns, please initiate a ticket with the JOVIAN Support Core.</p>
+        <p><strong>Email:</strong> <a href="mailto:support@joviangame.me">support@joviangame.me</a></p>
+        <p><em>Note: Response times may vary as our engineering team prioritizes critical engine deployment operations. Ensure your subject line includes [PRIVACY INQUIRY] for expedited routing.</em></p>
+
+        <br>
+        <p style="text-align: center; color: var(--cyan); font-family: 'Orbitron', sans-serif;">SYSTEM TERMINAL CLOSED.<br>CodeNova Studios | Engineering Division</p>
+
+    </main>
+
+    <script>
+        const canvas = document.getElementById('jovian-grid');
+        const ctx = canvas.getContext('2d');
+
+        let width, height;
+        let points = [];
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            initPoints();
+        }
+
+        function initPoints() {
+            points = [];
+            const spacing = 50;
+            for(let x = 0; x < width; x += spacing) {
+                for(let y = 0; y < height; y += spacing) {
+                    if(Math.random() > 0.5) {
+                        points.push({
+                            x: x + (Math.random() * 20 - 10),
+                            y: y + (Math.random() * 20 - 10),
+                            vx: (Math.random() - 0.5) * 0.5,
+                            vy: (Math.random() - 0.5) * 0.5
+                        });
+                    }
+                }
+            }
+        }
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function draw() {
+            ctx.clearRect(0, 0, width, height);
+            
+            ctx.fillStyle = '#00f7ff';
+            ctx.strokeStyle = 'rgba(0, 247, 255, 0.15)';
+            ctx.lineWidth = 1;
+
+            points.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if(p.x < 0 || p.x > width) p.vx *= -1;
+                if(p.y < 0 || p.y > height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+                ctx.fill();
+
+                const dx = mouseX - p.x;
+                const dy = mouseY - p.y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+
+                if(dist < 150) {
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(mouseX, mouseY);
+                    ctx.strokeStyle = `rgba(0, 247, 255, ${1 - dist/150})`;
+                    ctx.stroke();
+                }
+
+                points.forEach(p2 => {
+                    const d = Math.sqrt(Math.pow(p.x - p2.x, 2) + Math.pow(p.y - p2.y, 2));
+                    if(d < 60) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = 'rgba(0, 247, 255, 0.1)';
+                        ctx.stroke();
+                    }
+                });
+            });
+
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+        draw();
+    </script>
+</body>
+</html>
