@@ -191,36 +191,36 @@
         <a href="https://joviangame.me/J.O.V.I.A.N.Game/#" class="btn-return">Return to Hub</a>
     </nav>
 
-    <main class="privacy-container">
+<main class="privacy-container">
         <h1 class="page-title">Global Privacy Policy</h1>
         <div class="last-updated">LAST UPDATED: MARCH 2026 | STATUS: ENFORCED</div>
 
         <p>This Privacy Policy outlines how <strong>CodeNova Studios</strong> ("we", "our", or "us") collects, utilizes, protects, and handles your data when you interact with the <strong>JOVIAN Engine</strong>, the CodeNova Launcher, and our associated digital infrastructure (collectively, the "Services").</p>
         
-        <p>As a high-performance software engineering firm, CodeNova Studios is committed to absolute data minimization, cryptographic security, and transparent operational protocols. We have engineered our architecture to require as little personal data as possible, delegating sensitive identity operations to trusted, industry-standard third-party providers.</p>
+        <p>As a high-performance software engineering firm, CodeNova Studios is committed to absolute data minimization, cryptographic security, and transparent operational protocols. We have engineered our architecture to require as little personal data as possible, delegating specific identity operations to third-party providers.</p>
 
         <h2>1. Information We Collect</h2>
-        <p>Our systems are designed to operate efficiently without requiring extensive personal profiles. The data we collect is strictly limited to operational necessities:</p>
+        <p>Our systems are designed to operate efficiently without requiring extensive personal profiles. The data we collect is limited to operational necessities:</p>
         
         <h3>A. Account and Authentication Data</h3>
-        <p>We do not create, host, or store proprietary user accounts or raw passwords. We utilize <strong>Epic Online Services (EOS)</strong> for secure identity verification. When you authenticate via EOS, we receive:</p>
+        <p>We do not create, host, or store proprietary user accounts or raw passwords. We utilize <strong>Epic Online Services (EOS)</strong> as a third-party provider for identity verification. When you authenticate via this third-party service, we receive:</p>
         <ul>
-            <li>A unique, anonymized Epic Account ID (for matchmaking and save-state verification).</li>
+            <li>A unique, anonymized Account ID (for matchmaking and save-state verification).</li>
             <li>Your public display name.</li>
             <li>Basic entitlement data (to verify your license to use the JOVIAN Engine or associated software).</li>
         </ul>
 
         <h3>B. Network and Telemetry Data</h3>
-        <p>To ensure 99.97% SLA uptime and sub-millisecond latency, our systems monitor network health. We collect:</p>
+        <p>To ensure high-availability SLA uptime and sub-millisecond latency, our systems monitor network health. We collect:</p>
         <ul>
             <li><strong>Hardware Specifications:</strong> CPU/GPU models, RAM, and OS version to optimize Vulkan/DirectX 12 shader compilation.</li>
             <li><strong>Diagnostic Trace Logs:</strong> Only submitted when a user explicitly utilizes the CodeNova Launcher's internal feedback tool following a software crash.</li>
             <li><strong>Transient Network Data:</strong> See Section 3 for our decentralized networking protocols.</li>
         </ul>
 
-        <h2>2. Epic Online Services (EOS) Integration</h2>
-        <p>CodeNova Studios strictly adheres to the Epic Games Developer Agreement. Our integration with Epic Online Services is limited to secure identity authentication, cross-platform matchmaking, and anti-cheat implementation.</p>
-        <p><strong>Under no circumstances does CodeNova Studios intercept, scrape, or store your Epic Games account credentials.</strong> All authentication flows are handled directly via Epic Games' secure API endpoints. For information on how Epic Games handles your global account data, please refer to the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank">Epic Games Privacy Policy</a>.</p>
+        <h2>2. Third-Party Integrations (Epic Online Services)</h2>
+        <p>Our Services utilize <strong>Epic Online Services (EOS)</strong> for player authentication and basic account identity functionality. By using these features, you acknowledge that your interaction with EOS is governed by the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank">Epic Games Privacy Policy</a>.</p>
+        <p>CodeNova Studios does not control, and is not responsible for, the data collection practices of Epic Games, Inc. We receive only the minimum necessary identifiers required to facilitate gameplay and entitlements. We do not process or store your Epic Games account credentials within our databases.</p>
 
         <h2>3. Decentralized P2P Networking & IP Addresses</h2>
         <p>The JOVIAN Engine utilizes a proprietary, decentralized peer-to-peer (P2P) networking architecture to support massive-scale environments.</p>
@@ -232,38 +232,43 @@
         <h2>4. How We Use Your Information</h2>
         <p>The highly restricted data we process is used exclusively for the following technical operations:</p>
         <ul>
-            <li>Facilitating secure login protocols via EOS.</li>
+            <li>Facilitating login protocols via third-party integrations.</li>
             <li>Routing matchmaking requests to the lowest-latency nodes.</li>
-            <li>Deploying critical engine patches and security updates via the CodeNova Launcher.</li>
+            <li>Deploying critical engine patches and updates via the CodeNova Launcher.</li>
             <li>Analyzing aggregate, anonymized crash reports to finalize the C++ core architecture.</li>
-            <li>Enforcing Anti-Cheat and maintaining the integrity of the 5-million-player ecosystem.</li>
+            <li>Maintaining the integrity of our digital ecosystem.</li>
         </ul>
 
         <h2>5. Data Security & Storage</h2>
-        <p>We employ military-grade security protocols. All data in transit is encrypted using TLS 1.3. Because we do not store centralized user databases or passwords, the vector for catastrophic data breaches is fundamentally neutralized by our architecture. Any localized telemetry data is stored on heavily restricted, SOC 2-compliant cloud infrastructure.</p>
+        <p>We employ rigorous security protocols. All data in transit is encrypted using TLS 1.3. Because we do not store centralized user databases or passwords, the vector for catastrophic data breaches is fundamentally minimized by our architecture. Any localized telemetry data is stored on restricted cloud infrastructure.</p>
 
         <h2>6. Third-Party Sharing</h2>
         <p>We do not sell, rent, or monetize your data. We only share operational data with:</p>
         <ul>
-            <li><strong>Epic Games:</strong> Exclusively for the purpose of validating EOS tokens and managing cross-play ecosystems.</li>
+            <li><strong>Service Providers:</strong> Including Epic Games, strictly for the purpose of validating authentication tokens and managing cross-platform functionality.</li>
             <li><strong>Legal Authorities:</strong> Only when legally compelled by a valid subpoena or court order in our operating jurisdiction (New South Wales, Australia).</li>
         </ul>
 
         <h2>7. Your Rights and Control</h2>
         <p>Depending on your global jurisdiction (including GDPR and CCPA regulations), you maintain absolute rights over your data ecosystem:</p>
         <ul>
-            <li><strong>The Right to Access:</strong> You may request a payload of the data associated with your Epic ID in our systems.</li>
-            <li><strong>The Right to Erasure:</strong> You may request the deletion of your historical diagnostic data. (Note: Authenticating via EOS again will generate a new connection log).</li>
+            <li><strong>The Right to Access:</strong> You may request a payload of the data associated with your Account ID in our systems.</li>
+            <li><strong>The Right to Erasure:</strong> You may request the deletion of your historical diagnostic data.</li>
             <li><strong>Telemetry Opt-Out:</strong> Users may disable non-critical hardware telemetry directly within the CodeNova Launcher settings.</li>
         </ul>
 
         <h2>8. Contact the Engineering Division</h2>
-        <p>For data privacy requests, EOS compliance inquiries, or legal concerns, please initiate a ticket with the JOVIAN Support Core.</p>
+        <p>For data privacy requests, compliance inquiries, or legal concerns, please initiate a ticket with the JOVIAN Support Core.</p>
         <p><strong>Email:</strong> <a href="mailto:support@joviangame.me">support@joviangame.me</a></p>
         <p><em>Note: Response times may vary as our engineering team prioritizes critical engine deployment operations. Ensure your subject line includes [PRIVACY INQUIRY] for expedited routing.</em></p>
 
         <br>
         <p style="text-align: center; color: var(--cyan); font-family: 'Orbitron', sans-serif;">SYSTEM TERMINAL CLOSED.<br>CodeNova Studios | Engineering Division</p>
+        
+        <br>
+        <p style="text-align: center; font-size: 0.75rem; color: #4a5b78; font-family: 'Inter', sans-serif; margin-top: 20px;">
+            *Epic, Epic Games, and Epic Online Services are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. All rights reserved. CodeNova Studios is an independent entity.
+        </p>
 
     </main>
 
